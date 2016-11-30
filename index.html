@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculadora</title>
+        <link type="text/css" rel="stylesheet" href="estilo.css">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <form name="calculadora">
+          <div id="Marco">
+              <input type="text" value="" id="Pantalla" placeholder="0" onkeypress="return Numeros(event)">
+              <div id="Botones">
+                  <input type="button" value="7" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="8" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="9" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="/" class="Botones" onclick="Ver(value)">
+                  <br>
+                  <input type="button" value="4" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="5" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="6" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="*" class="Botones" onclick="Ver(value)">
+                  <br>
+                  <input type="button" value="1" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="2" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="3" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="+" class="Botones" onclick="Ver(value)">
+                  <br>
+                  <input type="button" value="CE" class="Botones" onclick="Eliminar()">
+                  <input type="button" value="0" class="Botones" onclick="Ver(value)">
+                  <input type="button" value="=" class="Botones" onclick="Calcular()">
+                  <input type="button" value="-" class="Botones" onclick="Ver(value)">
+                  <br>
+              </div>
+          </div>
+        </form>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>
