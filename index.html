@@ -1,39 +1,54 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="" class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Calculadora</title>
-        <link type="text/css" rel="stylesheet" href="estilo.css">
-    </head>
-    <body>
-        <h1>Calculadora</h1>
-        <form name="calculadora">
-          <div id="Marco">
-              <input type="text" value="" id="Pantalla" placeholder="0" onkeypress="return Numeros(event)">
-              <div id="Botones">
-                  <input type="button" value="7" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="8" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="9" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="/" class="Botones" onclick="Ver(value)">
-                  <br>
-                  <input type="button" value="4" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="5" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="6" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="*" class="Botones" onclick="Ver(value)">
-                  <br>
-                  <input type="button" value="1" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="2" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="3" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="+" class="Botones" onclick="Ver(value)">
-                  <br>
-                  <input type="button" value="CE" class="Botones" onclick="Eliminar()">
-                  <input type="button" value="0" class="Botones" onclick="Ver(value)">
-                  <input type="button" value="=" class="Botones" onclick="Calcular()">
-                  <input type="button" value="-" class="Botones" onclick="Ver(value)">
-                  <br>
-              </div>
-          </div>
-        </form>
-        <script type="text/javascript" src="script.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1, user-scalable=no">
+
+    <title>Calculadora</title>
+    <!-- google fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+    <!-- custom css -->
+    <link type="text/css" rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <form name="calculadora">
+      <div id="marco">
+          <input type="text" value="" id="pantalla" placeholder="0">
+          <div id="botones">
+              <!-- first row char 7,8,9,/ -->
+              <input type="button" value="7" class="botones" onclick="ver(value)">
+              <input type="button" value="8" class="botones" onclick="ver(value)">
+              <input type="button" value="9" class="botones" onclick="ver(value)">
+              <input type="button" value="/" class="botones" onclick="ver(value)">
+              <br>
+              <!-- second row char 4,5,6,* -->
+              <input type="button" value="4" class="botones" onclick="ver(value)">
+              <input type="button" value="5" class="botones" onclick="ver(value)">
+              <input type="button" value="6" class="botones" onclick="ver(value)">
+              <input type="button" value="*" class="botones" onclick="ver(value)">
+              <br>
+              <!-- third row char 1,2,3,+ -->
+              <input type="button" value="1" class="botones" onclick="ver(value)">
+              <input type="button" value="2" class="botones" onclick="ver(value)">
+              <input type="button" value="3" class="botones" onclick="ver(value)">
+              <input type="button" value="+" class="botones" onclick="ver(value)">
+              <br>
+              <!-- last row char CE,0,=,- -->
+              <input type="button" value="CE" class="botones">
+              <input type="button" value="0" class="botones" onclick="ver(value)">
+              <input type="button" value="=" class="botones calcular">
+              <input type="button" value="-" class="botones" onclick="ver(value)"><br>
+          </div><!-- ./botones -->
+      </div><!-- ./marco -->
+    </form><!-- ./form -->
+
+    <!-- custom js -->
+    <script src="script.js"></script>
+</body>
 </html>
