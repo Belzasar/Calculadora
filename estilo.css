@@ -1,6 +1,10 @@
-*{padding: 0; margin: 0}
+/* default values */
+body { font-family: 'Roboto'; }
+* { padding: 0; margin: 0 }
+h1{ text-align: center; }
 
-#Marco{
+/* home view */
+#marco {
     width: 300px;
     height: 300px;
     margin: 0 auto;
@@ -9,10 +13,10 @@
     border-radius: 9px;
 }
 
-#Pantalla{
-    width: 255px;
+#marco #pantalla {
+    width: 260px;
     height: 40px;
-    margin: 5px 20px;
+    margin: 5px 15px;
     background: rgb(3, 3, 3);
     color: rgb(50, 247, 10);
     border: 2px solid rgb(4, 4, 4);
@@ -21,14 +25,9 @@
     font-family: sans-serif;
 }
 
-.Botones{
+.botones {
     width: 40px;
     height: 40px;
     font-size: 20px;
     margin: 6px 15px;
-}
-
-h1{
-    text-align: center;
-    font-family: serif;
 }
